@@ -1,24 +1,11 @@
-# README
+# Friendship Model
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is a basic example of a social media back end. It has a User model and a Friendship model which is a self referential many to many relationship with extra boolean columns for pending and confirmed requests
 
-Things you may want to cover:
+The goal of this sample app is...
 
-* Ruby version
+* current_user.friends returns an array of users who have had a friend request confirmed.
 
-* System dependencies
+* current_user.pending_friends returns an array of users who have sent this user a friend request
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+From these we can start to build a clone of a very popular social media website
